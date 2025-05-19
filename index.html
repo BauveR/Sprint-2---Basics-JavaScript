@@ -9,11 +9,11 @@
 
     <script>
 
-const arr1 = [3,5,7,9];
-const arr2 = [2,4,6,8];
+const numeros = [3,1,2,2,5,5,2];
+const suma = (a,b, ...rest) => a + b + rest.reduce((sum,num) => sum + num, 0); 
+console.log(suma(...numeros));  
 
-const concatArr =[...arr1, ...arr2];
-console.log (concatArr)
+
 
 
     </script>
