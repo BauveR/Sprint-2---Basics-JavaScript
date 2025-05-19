@@ -9,12 +9,9 @@
 
     <script>
 
-var numbers = [1, 5, 10, 15];
-var squaresOf = numbers.map(function (x) {
-  return (x * x) ;
-});
-
-console.log(squaresOf);
+const numbers = [1, 2, 4, 13, 10, 15, 17];
+const pairs = numbers.filter(numero => numero % 2 === 0);
+console.log(pairs);
 
 
     </script>
