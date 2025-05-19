@@ -9,38 +9,20 @@
     
     <script> 
 
-const Intake = (input) => {
-    return new Promise((resolve, reject) => {
-        if (input === "hola") {
-            setTimeout(() => {
-                resolve("input correcto");
-            }, 2000);
-        } else {
-            reject("error input incorrecto");
-        }
+const sayHello = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve("hello world");
+      }, 2000);
     });
-};
+  2
+  async function greet() {
+    const x = await sayHello;
+    console.log(x); 
+  }
 
-// Test 1: Input correcto ("hola")
-Intake("hola")
-    .then((response) => {
-        console.log("✅ Éxito:", response); // "input correcto" (después de 2 segundos)
-    })
-    .catch((error) => {
-        console.error("❌ Fallo inesperado:", error);
-    });
-
-// Test 2: Input incorrecto ("adios")
-Intake("adios")
-    .then((response) => {
-        console.log("❌ Éxito inesperado:", response);
-    })
-    .catch((error) => {
-        console.error("✅ Error esperado:", error); // "error input incorrecto" (inmediato)
-    });
-
+  greet();
 
     
-    </script>
+    </script>f
 </body>
 </html>
