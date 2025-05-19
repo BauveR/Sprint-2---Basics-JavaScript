@@ -9,15 +9,35 @@
     
     <script> 
 
-const hello = new Promise((resolve)=>{
-    setTimeout(() => {
-        resolve("Hello World");
-    },2000);
-});
+const Intake = (input) => {
+    return new Promise((resolve, reject) => {
+        if (input === "hola") {
+            setTimeout(() => {
+                resolve("input correcto");
+            }, 2000);
+        } else {
+            reject("error input incorrecto");
+        }
+    });
+};
 
-hello.then((result)=>{
-    console.log("Promesa resuelta",result)
-})
+// Test 1: Input correcto ("hola")
+Intake("hola")
+    .then((response) => {
+        console.log("✅ Éxito:", response); // "input correcto" (después de 2 segundos)
+    })
+    .catch((error) => {
+        console.error("❌ Fallo inesperado:", error);
+    });
+
+// Test 2: Input incorrecto ("adios")
+Intake("adios")
+    .then((response) => {
+        console.log("❌ Éxito inesperado:", response);
+    })
+    .catch((error) => {
+        console.error("✅ Error esperado:", error); // "error input incorrecto" (inmediato)
+    });
 
 
     
