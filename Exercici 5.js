@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <script> 
-
 const sayHello = new Promise((resolve) => {
     setTimeout(() => {
       resolve("hello world");
@@ -22,11 +11,5 @@ const sayHello = new Promise((resolve) => {
     } catch(error) {
         console.log(error); 
     }
-
-})();
-
-
     
-    </script>
-</body>
-</html>
+})();
