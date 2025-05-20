@@ -5,9 +5,7 @@ This repository contains a collection of JavaScript exercises covering fundament
 Ternary Operator
 
 Callbacks
-
 Rest & Spread Operators
-
 Array Transformations (map, filter, reduce, etc.)
 
 Promises & Async/Await
