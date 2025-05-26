@@ -6,10 +6,7 @@ Ternary Operator
 
 Callbacks
 Rest & Spread Operators
-Array Transformations (map, filter, reduce, etc.)
-
-Promises & Async/Await
-
+Array Transformations (map, filter, reduce, etc.)Promises & Async/Await
 Perfect for beginners to practice and reinforce their JS skills!
 
 🔹 Preview of Folder Structure

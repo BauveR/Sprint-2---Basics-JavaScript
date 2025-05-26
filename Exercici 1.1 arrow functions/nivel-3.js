@@ -1,9 +1,9 @@
 
 class person {
     constructor(name) {
-        this.name = name;
+        this._name = name;
     }
     hello(){
-        () => {console.log(`hello, ${this.name}`)};
+        () => {console.log(`hello, ${this._name}`)};
     }
 } 
