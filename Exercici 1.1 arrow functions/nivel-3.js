@@ -1,9 +1,12 @@
 
-class person {
+class Person {
     constructor(name) {
-        this._name = name;
+        this.name = name;
     }
     hello(){
-        () => {console.log(`hello, ${this._name}`)};
+        (() => {console.log(`hello, ${this.name}`)})();
     }
 } 
+
+const p = new Person('Alice');
+p.hello(); 
